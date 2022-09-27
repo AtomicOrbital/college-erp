@@ -66,7 +66,7 @@ const AdminAddAdmin = () => {
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label htmlFor="nameId">Admin Name</label>
+                                            <label htmlFor="nameId">TÊN ADMIN</label>
                                             <input onChange={(e) => setName(e.target.value)} type="text" className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.name
@@ -83,7 +83,7 @@ const AdminAddAdmin = () => {
                                         </div>
 
                                         <div className="form-group">
-                                            <label htmlFor="departmentId">Department</label>
+                                            <label htmlFor="departmentId">Ngành</label>
                                             <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.department
@@ -101,7 +101,7 @@ const AdminAddAdmin = () => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label htmlFor="dobId">DOB</label>
+                                            <label htmlFor="dobId">NGÀY SINH</label>
                                             <input onChange={(e) => setDob(e.target.value)} type="date" className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.dob
@@ -109,7 +109,7 @@ const AdminAddAdmin = () => {
                                             {error.dob && (<div className="invalid-feedback">{error.dob}</div>)}
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="numberId">Contact Number</label>
+                                            <label htmlFor="numberId">SỐ ĐIỆN THOẠI</label>
                                             <input onChange={(e) => setContactNumber(e.target.value)} type="number" className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.contactNumber
@@ -127,7 +127,7 @@ const AdminAddAdmin = () => {
                                             }
                                         </div>
                                     </div>
-                                    {!isLoading && <button type="submit" className="btn btn-info  ">Add Admin</button>}
+                                    {!isLoading && <button type="submit" className="btn btn-info  ">THÊM ADMIN</button>}
                             </form>
                         </div>
                     </div>

@@ -37,7 +37,7 @@ const AdminGetAllSubjects = () => {
                             <div className="col-md-4">
                                 <form noValidate onSubmit={formHandler}>
                                     <div className="form-group">
-                                        <label htmlFor="departmentId">Department</label>
+                                        <label htmlFor="departmentId">Ngành</label>
                                         <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                             {
                                                 'is-invalid': error.department
@@ -53,7 +53,7 @@ const AdminGetAllSubjects = () => {
                                         {error.department && (<div className="invalid-feedback">{error.department}</div>)}
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="yearId">Year</label>
+                                        <label htmlFor="yearId">Năm</label>
                                         <select onChange={(e) => setYear(e.target.value)} className={classnames("form-control",
                                             {
                                                 'is-invalid': error.year
@@ -75,7 +75,7 @@ const AdminGetAllSubjects = () => {
                                             }
                                         </div>
                                     </div>
-                                    {!isLoading && <button type="submit" className="btn btn-info btn-block  ">Search</button>}
+                                    {!isLoading && <button type="submit" className="btn btn-info btn-block  ">Tìm kiếm</button>}
                                    
                                 </form>
 

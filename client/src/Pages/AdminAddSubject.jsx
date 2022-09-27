@@ -56,7 +56,7 @@ const AdminAddSubject = () => {
                             <div className="d-flex justify-content-md-center vh-100">
                                 <form noValidate onSubmit={formHandler}>
                                     <div className="form-group">
-                                        <label htmlFor="snameId">Subject Name</label>
+                                        <label htmlFor="snameId">Tên môn</label>
                                         <input onChange={(e) => setSubjectName(e.target.value)} type="text" className={classnames("form-control",
                                             {
                                                 'is-invalid': error.subjectName
@@ -64,7 +64,7 @@ const AdminAddSubject = () => {
                                         {error.subjectName && (<div className="invalid-feedback">{error.subjectName}</div>)}
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="scodeId">Subject Code</label>
+                                        <label htmlFor="scodeId">Mã Môn Học</label>
                                         <input onChange={(e) => setSubjectCode(e.target.value)} type="text" className={classnames("form-control",
                                             {
                                                 'is-invalid': error.subjectCode
@@ -72,7 +72,7 @@ const AdminAddSubject = () => {
                                         {error.subjectCode && (<div className="invalid-feedback">{error.subjectCode}</div>)}
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="totalLectures">Total Lectures</label>
+                                        <label htmlFor="totalLectures">Số Tín Chỉ</label>
                                         <input onChange={(e) => setTotalLectures(e.target.value)} type="number" className={classnames("form-control",
                                             {
                                                 'is-invalid': error.totalLectures
@@ -80,7 +80,7 @@ const AdminAddSubject = () => {
                                         {error.totalLectures && (<div className="invalid-feedback">{error.totalLectures}</div>)}
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="departmentId">Department</label>
+                                        <label htmlFor="departmentId">Ngành</label>
                                         <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                             {
                                                 'is-invalid': error.department
@@ -96,7 +96,7 @@ const AdminAddSubject = () => {
                                         {error.department && (<div className="invalid-feedback">{error.department}</div>)}
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="yearId">Year</label>
+                                        <label htmlFor="yearId">Năm</label>
                                         <select onChange={(e) => setYear(e.target.value)} className={classnames("form-control",
                                             {
                                                 'is-invalid': error.year
@@ -120,7 +120,7 @@ const AdminAddSubject = () => {
                                             }
                                         </div>
                                     </div>
-                                    {!isLoading && <button type="submit" className="btn btn-info  ">Add Subject</button>}
+                                    {!isLoading && <button type="submit" className="btn btn-info  ">Thêm môn học</button>}
                                    
                                     
                                 </form>

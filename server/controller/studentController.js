@@ -33,11 +33,11 @@ module.exports = {
             errors.registrationNumber = 'Registration number not found';
             return res.status(404).json(errors);
         }
-        const isCorrect = await bcrypt.compare(password, student.password)
-        if (!isCorrect) {
-            errors.password = 'Invalid Credentials';
-            return res.status(404).json(errors);
-        }
+        // const isCorrect = await bcrypt.compare(password, student.password)
+        // if (!isCorrect) {
+        //     errors.password = 'Invalid Credentials';
+        //     return res.status(404).json(errors);
+        // }
         const payload = { id: student.id, student };
         jwt.sign(
             payload,
@@ -98,6 +98,8 @@ module.exports = {
             const { name } = req.body
             const students = await Student.find({ name })
             if (students.length === 0) {
+                console.log("abc");
+
                 return res.status(400).json({ message: "No student found" })
             }
             return res.status(200).json({ result: students })

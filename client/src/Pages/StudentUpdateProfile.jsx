@@ -58,35 +58,35 @@ const StudentUpdateProfile = () => {
                             <div className="col-md-5 w-100 m-auto">
                                 <form onSubmit={formHandler}>
                                     <div className="form-group">
-                                        <label htmlFor="inputId">Profile Picture</label>
+                                        <label htmlFor="inputId">Ảnh cá nhân</label>
                                         <input required className="form-control" type="file" accept=".jpg,.png,.jpeg" id="inputId" onChange={imagehandler}></input>
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="genderId">Gender</label>
+                                        <label htmlFor="genderId">Giới tính</label>
                                         <select onChange={(e) => setGender(e.target.value)} className="form-control" id="genderId">
                                             <option>Select</option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-                                            <option value="Other">Other</option>
+                                            <option value="Male">Nam</option>
+                                            <option value="Female">Nữ</option>
+                                            <option value="Other">Khác</option>
                                         </select>
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="numberId">Contact Number</label>
+                                        <label htmlFor="numberId">Số điện thoại</label>
                                         <input onChange={(e) => setContactNumber(e.target.value)} required type="number" className="form-control" id="numberId" />
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="fatherId">Father Name</label>
+                                        <label htmlFor="fatherId">Tên bố</label>
                                         <input onChange={(e) => setFatherName(e.target.value)} type="text" className="form-control" id="fatherId" />
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="fathercnId">Father Contact Number</label>
+                                        <label htmlFor="fathercnId">Số điện thoại của bố (mẹ)</label>
                                         <input onChange={(e) => setFatherContactNumber(e.target.value)} type="number" className="form-control" id="fathercnId" />
                                     </div>
-                                    <div className="form-group">
+                                    {/* <div className="form-group">
                                         <label htmlFor="aadharId">Aadhar Card Number</label>
                                         <input onChange={(e) => setAadharCard(e.target.value)} type="number" className="form-control" id="aadharId" />
-                                    </div>
-                                    <button type="submit" className="btn btn-primary">Update</button>
+                                    </div> */}
+                                    <button type="submit" className="btn btn-primary">Cập nhật</button>
                                 </form>
                             </div>
                         </div>

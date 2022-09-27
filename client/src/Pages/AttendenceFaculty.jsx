@@ -79,7 +79,7 @@ const AttendenceFaculty = () => {
                     <div className="col-md-4">
                         <form noValidate onSubmit={formHandler}>
                             <div className="form-group">
-                                <label htmlFor="branchId">Department</label>
+                                <label htmlFor="branchId">Ngành</label>
                                 <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                     {
                                         'is-invalid': error.department
@@ -91,7 +91,7 @@ const AttendenceFaculty = () => {
                                 {error.department && (<div classNameName="invalid-feedback">{error.department}</div>)}
                             </div>
                             <div className="form-group">
-                                <label htmlFor="yearId">Year</label>
+                                <label htmlFor="yearId">Năm</label>
                                 <select onChange={(e) => setYear(e.target.value)} className={classnames("form-control",
                                     {
                                         'is-invalid': error.year
@@ -133,7 +133,7 @@ const AttendenceFaculty = () => {
                                     }
                                 </div>
                             </div>
-                            {!isLoading && <button type="submit" className="btn btn-info  ">Search</button>}
+                            {!isLoading && <button type="submit" className="btn btn-info  ">Tìm kiếm</button>}
                         </form>
                     </div>
                 </div>}

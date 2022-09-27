@@ -21,7 +21,9 @@ const keys = require('../config/key')
 module.exports = {
     addAdmin: async (req, res, next) => {
         try {
-            const { name, email, dob, department, contactNumber } = req.body
+            console.log("abc");
+
+            const { name, email, dob, department, contactNumber, password } = req.body
             
             //VALIDATE REQUEST BODY
             if (!name || !email || !dob || !department || !contactNumber){
@@ -69,7 +71,7 @@ module.exports = {
                 helper = admins.length.toString()
             }
             let hashedPassword;
-            hashedPassword = await bcrypt.hash(dob, 10)
+            hashedPassword = await bcrypt.hash(email, 10)
             var date = new Date();
             const joiningYear = date.getFullYear()
             var components = [
@@ -95,6 +97,7 @@ module.exports = {
             return res.status(200).json({ success: true, message: "Admin registerd successfully", response: newAdmin })
         }
         catch (error) {
+            console.log("abc");
             return res.status(400).json({ success: false, message: error.message })
         }
     },
@@ -206,7 +209,7 @@ module.exports = {
                 helper = students.length.toString()
             }
             let hashedPassword;
-            hashedPassword = await bcrypt.hash(dob, 10)
+            hashedPassword = await bcrypt.hash(email, 10)
             var date = new Date();
             const batch = date.getFullYear()
             var components = [
@@ -313,7 +316,7 @@ module.exports = {
                 helper = faculties.length.toString()
             }
             let hashedPassword;
-            hashedPassword = await bcrypt.hash(dob, 10)
+            hashedPassword = await bcrypt.hash(email, 10)
             var date = new Date();
             const joiningYear = date.getFullYear()
             var components = [

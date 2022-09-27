@@ -72,7 +72,7 @@ const FacultyUploadMarks = () => {
                     <div className="col-md-4">
                         <form noValidate onSubmit={formHandler}>
                             <div className="form-group">
-                                <label htmlFor="branchId">Department</label>
+                                <label htmlFor="branchId">Ngành</label>
                                 <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                     {
                                         'is-invalid': error.department
@@ -84,7 +84,7 @@ const FacultyUploadMarks = () => {
                                 {error.department && (<div classNameName="invalid-feedback">{error.department}</div>)}
                             </div>
                             <div className="form-group">
-                                <label htmlFor="yearId">Year</label>
+                                <label htmlFor="yearId">Năm</label>
                                 <select onChange={(e) => setYear(e.target.value)} className={classnames("form-control",
                                     {
                                         'is-invalid': error.year
@@ -135,7 +135,7 @@ const FacultyUploadMarks = () => {
                                 </select>
                                 {error.section && (<div classNameName="invalid-feedback">{error.section}</div>)}
                             </div>
-                            <button type="submit" className="btn btn-primary">Search</button>
+                            <button type="submit" className="btn btn-primary">Tìm kiếm</button>
                         </form>
                     </div>
                 </div>}
@@ -145,7 +145,7 @@ const FacultyUploadMarks = () => {
                     <div className="col-md-4">
                         <form onSubmit={secondFormHandler}>
                             <div className="form-group">
-                                <label htmlFor="subjectId">Subject Code</label>
+                                <label htmlFor="subjectId">Mã môn học</label>
                                 <select onChange={(e) => setSubjectCode(e.target.value)} className={classnames("form-control",
                                     {
                                         'is-invalid': errorHelper.subjectCode

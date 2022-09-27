@@ -68,7 +68,7 @@ const AdminAddStudent = () => {
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label htmlFor="nameId">Student Name</label>
+                                            <label htmlFor="nameId">Tên Sinh Viên</label>
                                             <input onChange={(e) => setName(e.target.value)} type="text" className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.name
@@ -84,7 +84,7 @@ const AdminAddStudent = () => {
                                             {error.email && (<div className="invalid-feedback">{error.email}</div>)}
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="departmentId">Department</label>
+                                            <label htmlFor="departmentId">Ngành</label>
                                             <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.department
@@ -100,7 +100,7 @@ const AdminAddStudent = () => {
                                             {error.department && (<div className="invalid-feedback">{error.department}</div>)}
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="yearId">Year</label>
+                                            <label htmlFor="yearId">Năm</label>
                                             <select onChange={(e) => setYear(e.target.value)} className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.year
@@ -123,7 +123,7 @@ const AdminAddStudent = () => {
                                             {error.section && (<div className="invalid-feedback">{error.section}</div>)}
                                         </div>
                                         <div class="form-group">
-                                            <label htmlFor="dobId">DOB</label>
+                                            <label htmlFor="dobId">Ngày Sinh</label>
                                             <input onChange={(e) => setDob(e.target.value)} type="date" className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.dob
@@ -134,30 +134,30 @@ const AdminAddStudent = () => {
                                     <div className="col-md-6">
                                         
                                         <div className="form-group">
-                                            <label htmlFor="genderId">Gender</label>
+                                            <label htmlFor="genderId">Giới Tính</label>
                                             <select onChange={(e) => setGender(e.target.value)} class="form-control" id="genderId">
                                                 <option>Select</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                                <option value="Other">Other</option>
+                                                <option value="Male">Nam</option>
+                                                <option value="Female">Nữ</option>
+                                                <option value="Other">Khác</option>
                                             </select>
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="numberId">Contact Number</label>
+                                            <label htmlFor="numberId">Số Điện Thoại</label>
                                             <input onChange={(e) => setContactNumber(e.target.value)} required type="number" class="form-control" id="numberId" />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="fatherId">Father Name</label>
+                                            <label htmlFor="fatherId">Tên Bố</label>
                                             <input onChange={(e) => setFatherName(e.target.value)} type="text" class="form-control" id="fatherId" />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="fathercnId">Father Contact Number</label>
+                                            <label htmlFor="fathercnId">Số điện thoại của bố (mẹ) </label>
                                             <input onChange={(e) => setFatherContactNumber(e.target.value)} type="number" className="form-control" id="fathercnId" />
                                         </div>
-                                        <div className="form-group">
+                                        {/* <div className="form-group">
                                             <label htmlFor="aadharId">Aadhar Card Number</label>
                                             <input onChange={(e) => setAadharCard(e.target.value)} type="number" className="form-control" id="aadharId" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
@@ -169,7 +169,7 @@ const AdminAddStudent = () => {
                                         }
                                     </div>
                                 </div>
-                                {!isLoading && <button type="submit" className="btn btn-info  ">Add Student</button>}
+                                {!isLoading && <button type="submit" className="btn btn-info  ">Thêm Sinh Viên</button>}
                             </form>
                         </div>
                     </div>

@@ -37,7 +37,7 @@ const AdminGetAllFaculty = () => {
                         <div className="col-md-4">
                             <form form-inline noValidate onSubmit={formHandler}>
                                 <div className="form-group">
-                                    <label htmlFor="departmentId">Department</label>
+                                    <label htmlFor="departmentId">Ngành</label>
                                     <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                         {
                                             'is-invalid': error.department
@@ -47,8 +47,8 @@ const AdminGetAllFaculty = () => {
                                         <option value="C.S.E">C.S.E</option>
                                         <option value="E.E.E">E.E.E</option>
                                         <option value="I.T">I.T</option>
-                                        <option value="Mechanical">Mechanical</option>
-                                        <option value="Civil">Civil</option>
+                                        <option value="Mechanical">CƠ KHÍ</option>
+                                        <option value="Civil">DÂN SỰ</option>
                                     </select>
                                     {error.department && (<div className="invalid-feedback">{error.department}</div>)}
                                 </div>
@@ -61,7 +61,7 @@ const AdminGetAllFaculty = () => {
                                         }
                                     </div>
                                 </div>
-                                {!isLoading && <button type="submit" className="btn btn-info btn-block  ">Search</button>}
+                                {!isLoading && <button type="submit" className="btn btn-info btn-block  ">Tìm kiếm  </button>}
                             </form>
 
 

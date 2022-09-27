@@ -32,7 +32,7 @@ const Home = () => {
                                     <table className="table ">
                                         <tbody className="text-white">
                                             <tr>
-                                                <td>Name</td>
+                                                <td>Tên</td>
                                                 <td>{store.student.student.student.name}</td>
                                             </tr>
                                             <tr>
@@ -40,19 +40,19 @@ const Home = () => {
                                                 <td>{store.student.student.student.email}</td>
                                             </tr>
                                             <tr>
-                                                <td>Registration Number</td>
+                                                <td>Tài khoản</td>
                                                 <td>{store.student.student.student.registrationNumber}</td>
                                             </tr>
                                             <tr>
-                                                <td>Date Of Birth</td>
+                                                <td>Ngày Sinh</td>
                                                 <td>{store.student.student.student.dob}</td>
                                             </tr>
                                             <tr>
-                                                <td>Year</td>
+                                                <td>Năm</td>
                                                 <td>{store.student.student.student.year}</td>
                                             </tr>
                                             <tr>
-                                                <td>Department</td>
+                                                <td>Ngành</td>
                                                 <td>{store.student.student.student.department}</td>
                                             </tr>
                                             <tr>
@@ -64,27 +64,27 @@ const Home = () => {
                                                 <td>{store.student.student.student.batch}</td>
                                             </tr>
                                             <tr>
-                                                <td>Gender</td>
+                                                <td>Giới tính</td>
                                                 <td>{store.student.student.student.gender ? store.student.student.student.gender : 
                                                 
                                                    "NA"
                                                 }</td>
                                             </tr>
                                             <tr>
-                                                <td>Contact Number</td>
+                                                <td>Số điện thoại</td>
                                                 <td>{store.student.student.student.studentMobileNumber ?
                                                     store.student.student.student.studentMobileNumber : "NA"}</td>
                                             </tr>
-                                            <tr>
+                                            {/* <tr>
                                                 <td>Aadhar Card</td>
                                                 <td>{store.student.student.student.aadharCard ? store.student.student.student.aadharCard : "NA"} </td>
-                                            </tr>
+                                            </tr> */}
                                             <tr>
-                                                <td>Father Name</td>
+                                                <td>Tên bố</td>
                                                 <td>{store.student.student.student.fatherName ? store.student.student.student.fatherName : "NA" }</td>
                                             </tr>
                                             <tr>
-                                                <td>Father Contact Number</td>
+                                                <td>Số điện thoại của bố (mẹ)</td>
                                                 <td>{store.student.student.student.fatherMobileNumber ? store.student.student.student.fatherMobileNumber : "NA"}</td>
                                             </tr>
                                         </tbody>

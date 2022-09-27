@@ -27,7 +27,7 @@ const Home = () => {
             <div className="row">
                 <div className="col">
                     <nav className="navbar navbar-expand-lg navbar-light  bg-light">
-                        <h4 className="navbar-brand mt-1" href="">SRM</h4>
+                        <h4 className="navbar-brand mt-1" href="">PTIT</h4>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -37,7 +37,7 @@ const Home = () => {
                                     <button type="button" className="btn"><Link to="/home"><li>{name.toUpperCase()}</li></Link></button>
                                 </li>
                                 <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/student/updateProfile"><li>UPDATE PROFILE</li></Link></button>
+                                    <button type="button" className="btn"><Link to="/student/updateProfile"><li>SỬA THÔNG TIN CÁ NHÂN</li></Link></button>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,20 +49,20 @@ const Home = () => {
                                     </div>
                                 </li>
                                 <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/studentDetails"><li>STUDENTS</li></Link></button>
+                                    <button type="button" className="btn"><Link to="/studentDetails"><li>SINH VIÊN</li></Link></button>
                                 </li>
                                 <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/studentDetails"><li>NEW CONVERSATION ({store.student.newerChats.length})</li></Link></button>
+                                    <button type="button" className="btn"><Link to="/studentDetails"><li>HỘI THOẠI ({store.student.newerChats.length})</li></Link></button>
                                 </li>
                                 <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/student/updatePassword"><li>UPDATE PASSWORD</li></Link></button>
+                                    <button type="button" className="btn"><Link to="/student/updatePassword"><li>ĐỔI MẬT KHẨU</li></Link></button>
                                 </li>
                                
                             </ul>
                            
                         </div>
                         <div>
-                            <button style={{listStyle:"none"}} onClick={logoutHandler} type="button" className="btn"><li>LOGOUT</li></button>
+                            <button style={{listStyle:"none"}} onClick={logoutHandler} type="button" className="btn"><li>ĐĂNG XUẤT</li></button>
                         </div>
                     </nav>
                 </div>

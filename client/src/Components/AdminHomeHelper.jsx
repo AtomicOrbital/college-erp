@@ -23,7 +23,7 @@ const Home = () => {
         <div className="container-fluid">
           
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <h4 className="navbar-brand mt-1" href="">SRM</h4>
+                <h4 className="navbar-brand mt-1" href="">PTIT</h4>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -33,32 +33,32 @@ const Home = () => {
                             <button type="button" className="btn"><Link to="/admin"><li>{name.toUpperCase()}</li></Link></button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn"><Link to="/admin/addFaculty"><li>ADD FACULTY</li></Link></button>
+                            <button type="button" className="btn"><Link to="/admin/addFaculty"><li>THÊM GIẢNG VIÊN</li></Link></button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn"><Link to="/admin/addStudent"><li>ADD STUDENT</li></Link></button>
+                            <button type="button" className="btn"><Link to="/admin/addStudent"><li>THÊM SINH VIÊN</li></Link></button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn"><Link to="/admin/addSubject"><li>ADD SUBJECT</li></Link></button>
+                            <button type="button" className="btn"><Link to="/admin/addSubject"><li>THÊM MÔN</li></Link></button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn"><Link to="/admin/addAdmin"><li>ADD ADMIN</li></Link></button>
+                            <button type="button" className="btn"><Link to="/admin/addAdmin"><li>THÊM ADMIN</li></Link></button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn"><Link to="/admin/allFaculties"><li>OUR FACULTIES</li></Link></button>
+                            <button type="button" className="btn"><Link to="/admin/allFaculties"><li>KHOA</li></Link></button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn"><Link to="/admin/allStudents"><li>OUR STUDENTS</li></Link></button>
+                            <button type="button" className="btn"><Link to="/admin/allStudents"><li>SINH VIÊN</li></Link></button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn"><Link to="/admin/allSubject"><li>SUBJECTS</li></Link></button>
+                            <button type="button" className="btn"><Link to="/admin/allSubject"><li>MÔN HỌC</li></Link></button>
                         </li>
 
                     </ul>
                 </div>
                 <div>
 
-                    <button style={{ listStyle: "None" }} onClick={logoutHandler} type="button" className="btn"><li>LOGOUT</li></button>
+                    <button style={{ listStyle: "None" }} onClick={logoutHandler} type="button" className="btn"><li>ĐĂNG XUẤT</li></button>
 
                 </div>
             </nav>

@@ -40,7 +40,7 @@ const FacultyUpdatePassword = () => {
                         <div className="col-md-6 m-auto">
                             <form noValidate onSubmit={formHandler}>
                                 <div className="form-group">
-                                    <label htmlFor="emailId">Old Password</label>
+                                    <label htmlFor="emailId">Mật Khẩu Cũ</label>
                                     <input onChange={(e) => setOldPassword(e.target.value)} type="password" value={oldPassword} className={classnames("form-control",
                                         {
                                             'is-invalid': error.oldPassword
@@ -49,20 +49,20 @@ const FacultyUpdatePassword = () => {
                                     {error.oldPassword && (<div classNameName="invalid-feedback">{error.oldPassword}</div>)}
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="passwordId">New Password</label>
+                                    <label htmlFor="passwordId">Mật Khẩu Mới</label>
                                     <input onChange={(e) => setNewPassword(e.target.value)} value={newPassword} className={classnames("form-control", {
                                         "is-invalid": error.newPassword
                                     })} value={newPassword} type="password" id="passwordId" />
                                     {error.newPassword && (<div classNameName="invalid-feedback">{error.newPassword}</div>)}
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="passwordCId">Confirm New Password</label>
+                                    <label htmlFor="passwordCId">Xác Nhận Mật Khẩu</label>
                                     <input onChange={(e) => setConfirmNewPassword(e.target.value)} value={confirmNewPassword} className={classnames("form-control", {
                                         "is-invalid": error.confirmNewPassword
                                     })} value={confirmNewPassword} type="password" id="passwordCId" />
                                     {error.confirmNewPassword && (<div classNameName="invalid-feedback">{error.confirmNewPassword}</div>)}
                                 </div>
-                                <button type="submit" className="btn btn-info btn-block ">Update Password</button>
+                                <button type="submit" className="btn btn-info btn-block ">Cập Nhật Mật Khẩu</button>
                             </form>
                         </div>
                     </div>

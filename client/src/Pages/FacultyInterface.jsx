@@ -26,7 +26,7 @@ const FacultyInterface = () => {
                                         <div className="card-body">
                                             <h5 className="card-title">{store.faculty.faculty.faculty.name}</h5>
                                             <h5 className="card-title">{store.faculty.faculty.faculty.registrationNumber}</h5>
-                                            <Link to='/faculty/updateProfile'>UPDATE PROFILE</Link>
+                                            <Link to='/faculty/updateProfile'>CẬP NHẬT THÔNG TIN CÁ NHÂN</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@ const FacultyInterface = () => {
                                     <table className="table border">
                                         <tbody>
                                             <tr>
-                                                <td>Name</td>
+                                                <td>Tên</td>
                                                 <td>{store.faculty.faculty.faculty.name}</td>
                                             </tr>
                                             <tr>
@@ -42,15 +42,15 @@ const FacultyInterface = () => {
                                                 <td>{store.faculty.faculty.faculty.email}</td>
                                             </tr>
                                             <tr>
-                                                <td>Registration Number</td>
+                                                <td>Tài khoản</td>
                                                 <td>{store.faculty.faculty.faculty.registrationNumber}</td>
                                             </tr>
                                             <tr>
-                                                <td>Date Of Birth</td>
+                                                <td>Ngày sinh</td>
                                                 <td>{store.faculty.faculty.faculty.dob}</td>
                                             </tr>
                                             <tr>
-                                                <td>Designation</td>
+                                                <td>Vai trò</td>
                                                 <td>{store.faculty.faculty.faculty.designation}</td>
                                             </tr>
                                             <tr>
@@ -58,18 +58,18 @@ const FacultyInterface = () => {
                                                 <td>{store.faculty.faculty.faculty.joiningYear}</td>
                                             </tr>
                                             <tr>
-                                                <td>Department</td>
+                                                <td>Ngành</td>
                                                 <td>{store.faculty.faculty.faculty.department}</td>
                                             </tr>
                                             <tr>
-                                                <td>Gender</td>
+                                                <td>Giới tính</td>
                                                 <td>{store.faculty.faculty.faculty.gender ? store.faculty.faculty.faculty.gender :
 
                                                     "NA"
                                                 }</td>
                                             </tr>
                                             <tr>
-                                                <td>Contact Number</td>
+                                                <td>Số điện thoại</td>
                                                 <td>{store.faculty.faculty.faculty.facultyMobileNumber ?
                                                     store.faculty.faculty.faculty.facultyMobileNumber : "NA"}</td>
                                             </tr>

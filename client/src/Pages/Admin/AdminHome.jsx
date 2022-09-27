@@ -32,7 +32,7 @@ const AdminHome = () => {
                                     <table className="table border">
                                         <tbody>
                                             <tr>
-                                                <td>Name</td>
+                                                <td>Tên</td>
                                                 <td>{store.admin.admin.name}</td>
                                             </tr>
                                             <tr>
@@ -48,11 +48,11 @@ const AdminHome = () => {
                                                 <td>{store.admin.admin.joiningYear}</td>
                                             </tr>
                                             <tr>
-                                                <td>Department</td>
+                                                <td>Ngành</td>
                                                 <td>{store.admin.admin.department}</td>
                                             </tr>
                                             <tr>
-                                                <td>Contact Number</td>
+                                                <td>Số điện thoại</td>
                                                 <td>{store.admin.admin.contactNumber ?
                                                     store.admin.admin.contactNumber : "NA"}</td>
                                             </tr>

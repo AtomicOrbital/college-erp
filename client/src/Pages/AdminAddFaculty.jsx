@@ -66,7 +66,7 @@ const AdminAddFaculty = () => {
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label htmlFor="nameId">Faculty Name</label>
+                                            <label htmlFor="nameId">Tên Giảng Viên</label>
                                             <input onChange={(e) => setName(e.target.value)} type="text" className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.name
@@ -82,19 +82,19 @@ const AdminAddFaculty = () => {
                                             {error.email && (<div className="invalid-feedback">{error.email}</div>)}
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="designationId">Designation</label>
+                                            <label htmlFor="designationId">Vai Trò</label>
                                             <select onChange={(e) => setDesignation(e.target.value)} className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.designation
                                                 })} id="designationId">
                                                 <option>Select</option>
-                                                <option value="Assistant Professor">Assistant Professor</option>
-                                                <option value="Senior Professer">Senior Professer</option>
+                                                <option value="Assistant Professor">TRỢ GIẢNG</option>
+                                                <option value="Senior Professer">GIÁO SƯ</option>
                                             </select>
                                             {error.designation && (<div className="invalid-feedback">{error.designation}</div>)}
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="departmentId">Department</label>
+                                            <label htmlFor="departmentId">Ngành</label>
                                             <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.department
@@ -112,7 +112,7 @@ const AdminAddFaculty = () => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label htmlFor="dobId">DOB</label>
+                                            <label htmlFor="dobId">Ngày Sinh</label>
                                             <input onChange={(e) => setDob(e.target.value)} type="date" className={classnames("form-control",
                                                 {
                                                     'is-invalid': error.dob
@@ -120,22 +120,22 @@ const AdminAddFaculty = () => {
                                             {error.dob && (<div className="invalid-feedback">{error.dob}</div>)}
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="genderId">Gender</label>
+                                            <label htmlFor="genderId">Giới Tính</label>
                                             <select onChange={(e) => setGender(e.target.value)} className="form-control" id="genderId">
                                                 <option>Select</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                                <option value="Other">Other</option>
+                                                <option value="Male">Nam</option>
+                                                <option value="Female">Nữ</option>
+                                                <option value="Other">Khác</option>
                                             </select>
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="numberId">Contact Number</label>
+                                            <label htmlFor="numberId">Số điện thoại</label>
                                             <input onChange={(e) => setFacultyMobileNumber(e.target.value)} type="number" className="form-control" id="numberId" />
                                         </div>
-                                        <div className="form-group">
+                                        {/* <div className="form-group">
                                             <label htmlFor="aadharId">Aadhar Card Number</label>
                                             <input onChange={(e) => setAadharCard(e.target.value)} type="number" className="form-control" id="aadharId" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
@@ -147,7 +147,7 @@ const AdminAddFaculty = () => {
                                         }
                                     </div>
                                 </div>
-                                {!isLoading && <button type="submit" className="btn btn-info">Add Faculty</button>}
+                                {!isLoading && <button type="submit" className="btn btn-info">Thêm Giảng Viên</button>}
                             </form>
                         </div>
                     </div>
